@@ -5,24 +5,12 @@
 using namespace std;
 int main()
 {
-	/*cout << "Please, provide the name of the \"File Name\", make sure to be {fileName}.txt the same dirctory\n:";
-	string name, line;
+	cout << "Please, provide the name of the \"File Name\", make sure to be {fileName}.txt the same dirctory\n:";
+	string name;
 	cin >> name;
-	name += ".txt";
-	ifstream file(name);
-	if (file.is_open())
-	{
-		while (getline(file, line))
-		{
-			cout << line << '\n';
-		}
-		file.close();
-	}
-
-	else cout << "Unable to open file";*/
-	//cout << bitset<4>('F');
 	Assembler ass;
-	ass.setFileName("assembleyLangFile");
+	//ass.setFileName("assembleyLangFile");
+	ass.setFileName(name);
 	ass.firstPass();
 	ass.secondPass();
 	cout << "Written By Taha.jo\n";
