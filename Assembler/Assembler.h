@@ -26,6 +26,7 @@ private:
 	void printAddressSymbolTABLE();
 	string fileName;
 	int N, begin;
+	bool flag;
 	set<string> labelSet;
 	//map<string, string> pseudoInstruction;
 	set< string> MRI;

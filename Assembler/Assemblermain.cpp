@@ -13,6 +13,6 @@ int main()
 	ass.setFileName(name);
 	ass.firstPass();
 	ass.secondPass();
-	cout << "Written By Taha.jo\n";
+	cout << "\nWritten By Taha.jo\n";
 	return 0;
 }

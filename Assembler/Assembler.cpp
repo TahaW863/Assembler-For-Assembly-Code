@@ -35,6 +35,8 @@ Assembler::Assembler() {
 	//N
 	N = 0;
 	begin = 0;
+	//flag
+	flag = 0;
 }
 string Assembler::lookUp(string code,bool indir) {
 	//MRI TABLE STRING
@@ -225,7 +227,9 @@ void Assembler::firstPass() {
 		{
 			if (fir) {
 				if (line.find("ORG") == -1) {
-					assert("Invalid CODE, there is NO ORG\n");
+					stringstream s("0");
+					s >> hex >> N;
+					begin = 0;
 				}
 				fir = false;
 			}
@@ -234,26 +238,36 @@ void Assembler::firstPass() {
 			ss >> temp;
 			if (temp == "ORG") {
 				ss >> temp;
-				N = stoi(temp, &sz);
-				begin = N;
+				
+				stringstream sx(temp);
+				sx >> std::hex >> begin;
+				 N= stoi(temp, &sz);
+				 //cout << temp << endl;
+				 continue;
 			}
 			if (temp == "END") {
 				break;
 			}
-			
+			if (NonMRI.count(temp) > 0 or InOuput.count(temp) > 0) {
+				++N;
+				continue;
+			}
+			if(temp.find(',')!=-1)
 			temp = temp.substr(0, temp.length() - 1);
 			if (addressFirstPass.count(temp) > 0) {
 				addressSymbol.push_back(make_pair(temp, N));
 				++N;
 				continue;
 			}
-			if (NonMRI.count(temp) > 0 or InOuput.count(temp) > 0) {
-				++N;
-				continue;
-			}
+			
 
 			//IF ITS NOT INPUT OUTPUT OR NON-MRI
 			ss >> temp;
+			if (temp.length() > 3) {
+				cout << temp << endl;
+				flag = true;
+				break;
+			}
 			addressFirstPass.insert(temp);
 			++N;
 		}
@@ -264,12 +278,21 @@ void Assembler::firstPass() {
 	else assert("Unable to open file");
 }
 void Assembler::printAddressSymbolTABLE() {
+	if (flag ) {
+		flag = true;
+		return;
+	}
+	//should not pass if the number of address syb not equal to the first
 	cout << "Symbolic Table:\n";
 	for (int i = 0; i < addressSymbol.size(); i++) {
 		cout << addressSymbol[i].second << ' ' << addressSymbol[i].first << endl;
 	}cout << endl;
 }
 void Assembler::secondPass() {
+	if (flag) {
+		cout << ":INVALID SIZE:";
+		return;
+	}
 	cout << "Address            Content\n";
 	ifstream myfile(fileName);
 	string line;
@@ -288,66 +311,64 @@ void Assembler::secondPass() {
 			if (temp == "END") {
 				break;
 			}
-			for (int i = 0; i < line.length(); i++) {
-				if (line[i] == ',') {
-					comma = true;
-					break;
-				}
-			}
-			if (comma) {
-				comma = false;
-				ss >> temp;
-				bool dec = false;
-				if (temp == "DEC")
-					dec = true;
-
-				ss >> temp;
-				int num;
-				
-				if (!dec) {
-
-				}
-				cout << bitset<12>(begin++) << "   ";
-				if (dec) {
-					num = stoi(temp, &sz);
-					cout << bitset<16>(num) << endl;
-				}
-				if (!dec) {
-					for (int i = 0; i < temp.length(); i++) {
-						cout << bitSTRING(temp[i]);
-					}
-					cout << endl;
-				}
-				continue;
-			}
 			if (MRI.count(temp) > 0) {
 				bool indir = false;
 				int len = line.length();
 				for (int i = 0; i < len; i++) {
-					if (i > 1  && line[i] == 'I' && isspace(line[i - 1]) ){
+					if (i > 1 && line[i] == 'I' && isspace(line[i - 1])) {
 						indir = true;
 					}
 				}
 				cout << bitset<12>(begin++) << "   " << lookUp(temp, indir);
 				ss >> temp;
-				int num=-1;
+				int num = -1;
 				for (int i = 0; i < addressSymbol.size(); i++) {
 					if (addressSymbol[i].first == temp) {
 						num = addressSymbol[i].second;
 						break;
 					}
 				}
-				if(num==-1)
-					num= stoi(temp, &sz);
-				cout << "   " << bitset<12>(num)<<endl;
+				if (num == -1)
+					num = stoi(temp, &sz);
+				cout << bitset<12>(num) << endl;
 				continue;
 			}
+			
+			if (line.find(',')!=-1) {
+				
+				ss >> temp;
+				bool dec = false;
+				
+					dec = true;
+
+				
+				int num;
+				
+				if (temp=="HEX") {
+					cout << bitset<12>(begin++) << "   ";
+					ss >> temp;
+					stringstream sx(temp);
+					sx >> hex >> num;
+					cout << bitset<16>(num) << endl;
+					continue;
+				}
+				if (temp == "DEC") {
+					cout << bitset<12>(begin++) << "   ";
+					
+						num = stoi(temp, &sz);
+						cout << bitset<16>(num) << endl;
+					continue;
+				}
+				
+			}
+			
 			if (NonMRI.count(temp) > 0) {
 				cout << bitset<12>(begin++) << "   ";
 				string hexFromLook = lookUp(temp, true);
 				for (int i = 0; i < hexFromLook.length(); i++) {
 					cout << bitSTRING(hexFromLook[i]);
 				}cout << endl;
+				continue;
 			}
 			if (InOuput.count(temp) > 0) {
 				cout << bitset<12>(begin++) << "   ";
@@ -355,7 +376,9 @@ void Assembler::secondPass() {
 				for (int i = 0; i < hexFromLook.length(); i++) {
 					cout << bitSTRING(hexFromLook[i]);
 				}cout << endl;
+				continue;
 			}
+
 		}
 		myfile.close();
 	}
