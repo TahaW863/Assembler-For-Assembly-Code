@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.6">
+  <compound refid="class_assembler" kind="class"><name>Assembler</name>
+    <member refid="class_assembler_1af87c5997ea0a7f01811af319f4d1c193" kind="variable"><name>fileName</name></member>
+    <member refid="class_assembler_1a112f9f0224524a5dab5bd9781f71a48a" kind="variable"><name>N</name></member>
+    <member refid="class_assembler_1ad48362faa1b40ea033b264ea9dc0475b" kind="variable"><name>begin</name></member>
+    <member refid="class_assembler_1ab65594ef103917eafa7a3f22901ae7e7" kind="variable"><name>flag</name></member>
+    <member refid="class_assembler_1a079cb0f0c0abe7d36ded8c7924896c3f" kind="variable"><name>labelSet</name></member>
+    <member refid="class_assembler_1adaf13ee8d64fbad8be3589ed8ca50aa8" kind="variable"><name>MRI</name></member>
+    <member refid="class_assembler_1aceb568c8a277f828d17f043052a98308" kind="variable"><name>NonMRI</name></member>
+    <member refid="class_assembler_1aad37c76987fdaf9e4d49516412a24cd1" kind="variable"><name>InOuput</name></member>
+    <member refid="class_assembler_1ad6f71753891298701af25e7264cf8e4a" kind="variable"><name>addressFirstPass</name></member>
+    <member refid="class_assembler_1ac726807690085ce890848eda522e0d01" kind="variable"><name>addressSymbol</name></member>
+    <member refid="class_assembler_1aacc0a5f2bb3fff928b95934fa386b133" kind="function"><name>Assembler</name></member>
+    <member refid="class_assembler_1a09500d38e6c30f27976ff1b100bbd541" kind="function"><name>setFileName</name></member>
+    <member refid="class_assembler_1a2896bf358b7ae6c53bcc887f48cf52f3" kind="function"><name>firstPass</name></member>
+    <member refid="class_assembler_1a53e160529c79d8ec2d0f8a54771e04d6" kind="function"><name>secondPass</name></member>
+    <member refid="class_assembler_1a1493cea04817ad532a84fe871ae88e13" kind="function"><name>lookUp</name></member>
+    <member refid="class_assembler_1ae6ca5344f27662196f46461dcba6bcb7" kind="function"><name>bitSTRING</name></member>
+    <member refid="class_assembler_1ac47a6bdcaeb61f02a32b7e04e2babd0f" kind="function"><name>printAddressSymbolTABLE</name></member>
+  </compound>
+  <compound refid="namespacestd" kind="namespace"><name>std</name>
+  </compound>
+  <compound refid="_assembler_8cpp" kind="file"><name>Assembler.cpp</name>
+    <member refid="_assembler_8cpp_1a222bba53038fead08349dba0c826e092" kind="variable"><name>sz</name></member>
+  </compound>
+  <compound refid="_assembler_8h" kind="file"><name>Assembler.h</name>
+  </compound>
+  <compound refid="_assemblermain_8cpp" kind="file"><name>Assemblermain.cpp</name>
+    <member refid="_assemblermain_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="resource_8h" kind="file"><name>resource.h</name>
+  </compound>
+  <compound refid="dir_3914fe8b76b6a309556ce504bed74049" kind="dir"><name>C:/Users/Eng-Taha.jo/source/repos/Assembler/Assembler</name>
+  </compound>
+  <compound refid="dir_732f53e435a48aedbe7dc89fe09bb062" kind="dir"><name>C:/Users/Eng-Taha.jo/source/repos/Assembler</name>
+  </compound>
+  <compound refid="dir_0582e013805af67697a8828d3bdae0d7" kind="dir"><name>C:/Users/Eng-Taha.jo</name>
+  </compound>
+  <compound refid="dir_2724a86b98fbe3f0e7d8e6b1a773c772" kind="dir"><name>C:/Users/Eng-Taha.jo/source/repos</name>
+  </compound>
+  <compound refid="dir_39a86e8c3c78c3a8dbfe0d8ef6ef697c" kind="dir"><name>C:/Users/Eng-Taha.jo/source</name>
+  </compound>
+  <compound refid="dir_8ceffd4ee35c3518d4e8bdc7e638efe8" kind="dir"><name>C:/Users</name>
+  </compound>
+</doxygenindex>

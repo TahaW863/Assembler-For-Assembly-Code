@@ -9,6 +9,14 @@
 #include<bitset>
 #include<string>
 #include<assert.h>
+#include <stdexcept>
+#include <stdio.h>
+#include <stdlib.h>
+#include <ctype.h>
+#include <sstream>
+#include <iomanip>
+#include <string>
+#include <cstdint>
 #include <sstream> 
 using namespace std;
 class Assembler

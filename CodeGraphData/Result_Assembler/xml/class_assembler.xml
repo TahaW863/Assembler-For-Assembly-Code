@@ -1,0 +1,369 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_assembler" kind="class" prot="public">
+    <compoundname>Assembler</compoundname>
+    <includes refid="_assembler_8h" local="no">Assembler.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_assembler_1af87c5997ea0a7f01811af319f4d1c193" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Assembler::fileName</definition>
+        <argsstring></argsstring>
+        <name>fileName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Eng-Taha.jo/source/repos/Assembler/Assembler/Assembler.h" line="27" column="1" bodyfile="C:/Users/Eng-Taha.jo/source/repos/Assembler/Assembler/Assembler.h" bodystart="27" bodyend="-1"/>
+        <referencedby refid="class_assembler_1a2896bf358b7ae6c53bcc887f48cf52f3" compoundref="_assembler_8cpp" startline="219" endline="279">firstPass</referencedby>
+        <referencedby refid="class_assembler_1a53e160529c79d8ec2d0f8a54771e04d6" compoundref="_assembler_8cpp" startline="291" endline="387">secondPass</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_assembler_1a112f9f0224524a5dab5bd9781f71a48a" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Assembler::N</definition>
+        <argsstring></argsstring>
+        <name>N</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Eng-Taha.jo/source/repos/Assembler/Assembler/Assembler.h" line="28" column="1" bodyfile="C:/Users/Eng-Taha.jo/source/repos/Assembler/Assembler/Assembler.h" bodystart="28" bodyend="-1"/>
+        <referencedby refid="class_assembler_1aacc0a5f2bb3fff928b95934fa386b133" compoundref="_assembler_8cpp" startline="3" endline="40">Assembler</referencedby>
+        <referencedby refid="class_assembler_1a2896bf358b7ae6c53bcc887f48cf52f3" compoundref="_assembler_8cpp" startline="219" endline="279">firstPass</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_assembler_1ad48362faa1b40ea033b264ea9dc0475b" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Assembler::begin</definition>
+        <argsstring></argsstring>
+        <name>begin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Eng-Taha.jo/source/repos/Assembler/Assembler/Assembler.h" line="28" column="1" bodyfile="C:/Users/Eng-Taha.jo/source/repos/Assembler/Assembler/Assembler.h" bodystart="28" bodyend="-1"/>
+        <referencedby refid="class_assembler_1aacc0a5f2bb3fff928b95934fa386b133" compoundref="_assembler_8cpp" startline="3" endline="40">Assembler</referencedby>
+        <referencedby refid="class_assembler_1a2896bf358b7ae6c53bcc887f48cf52f3" compoundref="_assembler_8cpp" startline="219" endline="279">firstPass</referencedby>
+        <referencedby refid="class_assembler_1a53e160529c79d8ec2d0f8a54771e04d6" compoundref="_assembler_8cpp" startline="291" endline="387">secondPass</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_assembler_1ab65594ef103917eafa7a3f22901ae7e7" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Assembler::flag</definition>
+        <argsstring></argsstring>
+        <name>flag</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Eng-Taha.jo/source/repos/Assembler/Assembler/Assembler.h" line="29" column="1" bodyfile="C:/Users/Eng-Taha.jo/source/repos/Assembler/Assembler/Assembler.h" bodystart="29" bodyend="-1"/>
+        <referencedby refid="class_assembler_1aacc0a5f2bb3fff928b95934fa386b133" compoundref="_assembler_8cpp" startline="3" endline="40">Assembler</referencedby>
+        <referencedby refid="class_assembler_1a2896bf358b7ae6c53bcc887f48cf52f3" compoundref="_assembler_8cpp" startline="219" endline="279">firstPass</referencedby>
+        <referencedby refid="class_assembler_1ac47a6bdcaeb61f02a32b7e04e2babd0f" compoundref="_assembler_8cpp" startline="280" endline="290">printAddressSymbolTABLE</referencedby>
+        <referencedby refid="class_assembler_1a53e160529c79d8ec2d0f8a54771e04d6" compoundref="_assembler_8cpp" startline="291" endline="387">secondPass</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_assembler_1a079cb0f0c0abe7d36ded8c7924896c3f" prot="private" static="no" mutable="no">
+        <type>set&lt; string &gt;</type>
+        <definition>set&lt;string&gt; Assembler::labelSet</definition>
+        <argsstring></argsstring>
+        <name>labelSet</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Eng-Taha.jo/source/repos/Assembler/Assembler/Assembler.h" line="30" column="1" bodyfile="C:/Users/Eng-Taha.jo/source/repos/Assembler/Assembler/Assembler.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_assembler_1adaf13ee8d64fbad8be3589ed8ca50aa8" prot="private" static="no" mutable="no">
+        <type>set&lt; string &gt;</type>
+        <definition>set&lt; string&gt; Assembler::MRI</definition>
+        <argsstring></argsstring>
+        <name>MRI</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Eng-Taha.jo/source/repos/Assembler/Assembler/Assembler.h" line="32" column="1" bodyfile="C:/Users/Eng-Taha.jo/source/repos/Assembler/Assembler/Assembler.h" bodystart="32" bodyend="-1"/>
+        <referencedby refid="class_assembler_1aacc0a5f2bb3fff928b95934fa386b133" compoundref="_assembler_8cpp" startline="3" endline="40">Assembler</referencedby>
+        <referencedby refid="class_assembler_1a53e160529c79d8ec2d0f8a54771e04d6" compoundref="_assembler_8cpp" startline="291" endline="387">secondPass</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_assembler_1aceb568c8a277f828d17f043052a98308" prot="private" static="no" mutable="no">
+        <type>set&lt; string &gt;</type>
+        <definition>set&lt; string&gt; Assembler::NonMRI</definition>
+        <argsstring></argsstring>
+        <name>NonMRI</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Eng-Taha.jo/source/repos/Assembler/Assembler/Assembler.h" line="33" column="1" bodyfile="C:/Users/Eng-Taha.jo/source/repos/Assembler/Assembler/Assembler.h" bodystart="33" bodyend="-1"/>
+        <referencedby refid="class_assembler_1aacc0a5f2bb3fff928b95934fa386b133" compoundref="_assembler_8cpp" startline="3" endline="40">Assembler</referencedby>
+        <referencedby refid="class_assembler_1a2896bf358b7ae6c53bcc887f48cf52f3" compoundref="_assembler_8cpp" startline="219" endline="279">firstPass</referencedby>
+        <referencedby refid="class_assembler_1a53e160529c79d8ec2d0f8a54771e04d6" compoundref="_assembler_8cpp" startline="291" endline="387">secondPass</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_assembler_1aad37c76987fdaf9e4d49516412a24cd1" prot="private" static="no" mutable="no">
+        <type>set&lt; string &gt;</type>
+        <definition>set&lt;string&gt; Assembler::InOuput</definition>
+        <argsstring></argsstring>
+        <name>InOuput</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Eng-Taha.jo/source/repos/Assembler/Assembler/Assembler.h" line="34" column="1" bodyfile="C:/Users/Eng-Taha.jo/source/repos/Assembler/Assembler/Assembler.h" bodystart="34" bodyend="-1"/>
+        <referencedby refid="class_assembler_1aacc0a5f2bb3fff928b95934fa386b133" compoundref="_assembler_8cpp" startline="3" endline="40">Assembler</referencedby>
+        <referencedby refid="class_assembler_1a2896bf358b7ae6c53bcc887f48cf52f3" compoundref="_assembler_8cpp" startline="219" endline="279">firstPass</referencedby>
+        <referencedby refid="class_assembler_1a53e160529c79d8ec2d0f8a54771e04d6" compoundref="_assembler_8cpp" startline="291" endline="387">secondPass</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_assembler_1ad6f71753891298701af25e7264cf8e4a" prot="private" static="no" mutable="no">
+        <type>set&lt; string &gt;</type>
+        <definition>set&lt;string&gt; Assembler::addressFirstPass</definition>
+        <argsstring></argsstring>
+        <name>addressFirstPass</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Eng-Taha.jo/source/repos/Assembler/Assembler/Assembler.h" line="35" column="1" bodyfile="C:/Users/Eng-Taha.jo/source/repos/Assembler/Assembler/Assembler.h" bodystart="35" bodyend="-1"/>
+        <referencedby refid="class_assembler_1a2896bf358b7ae6c53bcc887f48cf52f3" compoundref="_assembler_8cpp" startline="219" endline="279">firstPass</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_assembler_1ac726807690085ce890848eda522e0d01" prot="private" static="no" mutable="no">
+        <type>vector&lt; pair&lt; string, int &gt; &gt;</type>
+        <definition>vector&lt;pair&lt;string, int&gt; &gt; Assembler::addressSymbol</definition>
+        <argsstring></argsstring>
+        <name>addressSymbol</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Eng-Taha.jo/source/repos/Assembler/Assembler/Assembler.h" line="36" column="1" bodyfile="C:/Users/Eng-Taha.jo/source/repos/Assembler/Assembler/Assembler.h" bodystart="36" bodyend="-1"/>
+        <referencedby refid="class_assembler_1a2896bf358b7ae6c53bcc887f48cf52f3" compoundref="_assembler_8cpp" startline="219" endline="279">firstPass</referencedby>
+        <referencedby refid="class_assembler_1ac47a6bdcaeb61f02a32b7e04e2babd0f" compoundref="_assembler_8cpp" startline="280" endline="290">printAddressSymbolTABLE</referencedby>
+        <referencedby refid="class_assembler_1a53e160529c79d8ec2d0f8a54771e04d6" compoundref="_assembler_8cpp" startline="291" endline="387">secondPass</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_assembler_1aacc0a5f2bb3fff928b95934fa386b133" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Assembler::Assembler</definition>
+        <argsstring>()</argsstring>
+        <name>Assembler</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Eng-Taha.jo/source/repos/Assembler/Assembler/Assembler.h" line="17" column="1" bodyfile="C:/Users/Eng-Taha.jo/source/repos/Assembler/Assembler/Assembler.cpp" bodystart="3" bodyend="40"/>
+        <references refid="class_assembler_1ad48362faa1b40ea033b264ea9dc0475b" compoundref="_assembler_8h" startline="28">begin</references>
+        <references refid="class_assembler_1ab65594ef103917eafa7a3f22901ae7e7" compoundref="_assembler_8h" startline="29">flag</references>
+        <references refid="class_assembler_1aad37c76987fdaf9e4d49516412a24cd1" compoundref="_assembler_8h" startline="34">InOuput</references>
+        <references refid="class_assembler_1adaf13ee8d64fbad8be3589ed8ca50aa8" compoundref="_assembler_8h" startline="32">MRI</references>
+        <references refid="class_assembler_1a112f9f0224524a5dab5bd9781f71a48a" compoundref="_assembler_8h" startline="28">N</references>
+        <references refid="class_assembler_1aceb568c8a277f828d17f043052a98308" compoundref="_assembler_8h" startline="33">NonMRI</references>
+      </memberdef>
+      <memberdef kind="function" id="class_assembler_1a09500d38e6c30f27976ff1b100bbd541" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Assembler::setFileName</definition>
+        <argsstring>(string fileName)</argsstring>
+        <name>setFileName</name>
+        <param>
+          <type>string</type>
+          <declname>fileName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Eng-Taha.jo/source/repos/Assembler/Assembler/Assembler.h" line="18" column="1" bodyfile="C:/Users/Eng-Taha.jo/source/repos/Assembler/Assembler/Assembler.cpp" bodystart="216" bodyend="218"/>
+        <referencedby refid="_assemblermain_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="_assemblermain_8cpp" startline="6" endline="18">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_assembler_1a2896bf358b7ae6c53bcc887f48cf52f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Assembler::firstPass</definition>
+        <argsstring>()</argsstring>
+        <name>firstPass</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Eng-Taha.jo/source/repos/Assembler/Assembler/Assembler.h" line="20" column="1" bodyfile="C:/Users/Eng-Taha.jo/source/repos/Assembler/Assembler/Assembler.cpp" bodystart="219" bodyend="279"/>
+        <references refid="class_assembler_1ad6f71753891298701af25e7264cf8e4a" compoundref="_assembler_8h" startline="35">addressFirstPass</references>
+        <references refid="class_assembler_1ac726807690085ce890848eda522e0d01" compoundref="_assembler_8h" startline="36">addressSymbol</references>
+        <references refid="class_assembler_1ad48362faa1b40ea033b264ea9dc0475b" compoundref="_assembler_8h" startline="28">begin</references>
+        <references refid="class_assembler_1af87c5997ea0a7f01811af319f4d1c193" compoundref="_assembler_8h" startline="27">fileName</references>
+        <references refid="class_assembler_1ab65594ef103917eafa7a3f22901ae7e7" compoundref="_assembler_8h" startline="29">flag</references>
+        <references refid="class_assembler_1aad37c76987fdaf9e4d49516412a24cd1" compoundref="_assembler_8h" startline="34">InOuput</references>
+        <references refid="class_assembler_1a112f9f0224524a5dab5bd9781f71a48a" compoundref="_assembler_8h" startline="28">N</references>
+        <references refid="class_assembler_1aceb568c8a277f828d17f043052a98308" compoundref="_assembler_8h" startline="33">NonMRI</references>
+        <references refid="class_assembler_1ac47a6bdcaeb61f02a32b7e04e2babd0f" compoundref="_assembler_8cpp" startline="280" endline="290">printAddressSymbolTABLE</references>
+        <references refid="_assembler_8cpp_1a222bba53038fead08349dba0c826e092" compoundref="_assembler_8cpp" startline="2">sz</references>
+        <referencedby refid="_assemblermain_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="_assemblermain_8cpp" startline="6" endline="18">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_assembler_1a53e160529c79d8ec2d0f8a54771e04d6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Assembler::secondPass</definition>
+        <argsstring>()</argsstring>
+        <name>secondPass</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Eng-Taha.jo/source/repos/Assembler/Assembler/Assembler.h" line="22" column="1" bodyfile="C:/Users/Eng-Taha.jo/source/repos/Assembler/Assembler/Assembler.cpp" bodystart="291" bodyend="387"/>
+        <references refid="class_assembler_1ac726807690085ce890848eda522e0d01" compoundref="_assembler_8h" startline="36">addressSymbol</references>
+        <references refid="class_assembler_1ad48362faa1b40ea033b264ea9dc0475b" compoundref="_assembler_8h" startline="28">begin</references>
+        <references refid="class_assembler_1ae6ca5344f27662196f46461dcba6bcb7" compoundref="_assembler_8cpp" startline="156" endline="215">bitSTRING</references>
+        <references refid="class_assembler_1af87c5997ea0a7f01811af319f4d1c193" compoundref="_assembler_8h" startline="27">fileName</references>
+        <references refid="class_assembler_1ab65594ef103917eafa7a3f22901ae7e7" compoundref="_assembler_8h" startline="29">flag</references>
+        <references refid="class_assembler_1aad37c76987fdaf9e4d49516412a24cd1" compoundref="_assembler_8h" startline="34">InOuput</references>
+        <references refid="class_assembler_1a1493cea04817ad532a84fe871ae88e13" compoundref="_assembler_8cpp" startline="41" endline="155">lookUp</references>
+        <references refid="class_assembler_1adaf13ee8d64fbad8be3589ed8ca50aa8" compoundref="_assembler_8h" startline="32">MRI</references>
+        <references refid="class_assembler_1aceb568c8a277f828d17f043052a98308" compoundref="_assembler_8h" startline="33">NonMRI</references>
+        <references refid="_assembler_8cpp_1a222bba53038fead08349dba0c826e092" compoundref="_assembler_8cpp" startline="2">sz</references>
+        <referencedby refid="_assemblermain_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="_assemblermain_8cpp" startline="6" endline="18">main</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_assembler_1a1493cea04817ad532a84fe871ae88e13" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string Assembler::lookUp</definition>
+        <argsstring>(string, bool)</argsstring>
+        <name>lookUp</name>
+        <param>
+          <type>string</type>
+          <defname>code</defname>
+        </param>
+        <param>
+          <type>bool</type>
+          <defname>indir</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Eng-Taha.jo/source/repos/Assembler/Assembler/Assembler.h" line="24" column="1" bodyfile="C:/Users/Eng-Taha.jo/source/repos/Assembler/Assembler/Assembler.cpp" bodystart="41" bodyend="155"/>
+        <references refid="class_assembler_1ae6ca5344f27662196f46461dcba6bcb7" compoundref="_assembler_8cpp" startline="156" endline="215">bitSTRING</references>
+        <referencedby refid="class_assembler_1a53e160529c79d8ec2d0f8a54771e04d6" compoundref="_assembler_8cpp" startline="291" endline="387">secondPass</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_assembler_1ae6ca5344f27662196f46461dcba6bcb7" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string Assembler::bitSTRING</definition>
+        <argsstring>(char)</argsstring>
+        <name>bitSTRING</name>
+        <param>
+          <type>char</type>
+          <defname>c</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Eng-Taha.jo/source/repos/Assembler/Assembler/Assembler.h" line="25" column="1" bodyfile="C:/Users/Eng-Taha.jo/source/repos/Assembler/Assembler/Assembler.cpp" bodystart="156" bodyend="215"/>
+        <referencedby refid="class_assembler_1a1493cea04817ad532a84fe871ae88e13" compoundref="_assembler_8cpp" startline="41" endline="155">lookUp</referencedby>
+        <referencedby refid="class_assembler_1a53e160529c79d8ec2d0f8a54771e04d6" compoundref="_assembler_8cpp" startline="291" endline="387">secondPass</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_assembler_1ac47a6bdcaeb61f02a32b7e04e2babd0f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Assembler::printAddressSymbolTABLE</definition>
+        <argsstring>()</argsstring>
+        <name>printAddressSymbolTABLE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Eng-Taha.jo/source/repos/Assembler/Assembler/Assembler.h" line="26" column="1" bodyfile="C:/Users/Eng-Taha.jo/source/repos/Assembler/Assembler/Assembler.cpp" bodystart="280" bodyend="290"/>
+        <references refid="class_assembler_1ac726807690085ce890848eda522e0d01" compoundref="_assembler_8h" startline="36">addressSymbol</references>
+        <references refid="class_assembler_1ab65594ef103917eafa7a3f22901ae7e7" compoundref="_assembler_8h" startline="29">flag</references>
+        <referencedby refid="class_assembler_1a2896bf358b7ae6c53bcc887f48cf52f3" compoundref="_assembler_8cpp" startline="219" endline="279">firstPass</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>Assembler</label>
+        <link refid="class_assembler"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>addressSymbol</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>fileName</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>MRI</edgelabel>
+          <edgelabel>NonMRI</edgelabel>
+          <edgelabel>InOuput</edgelabel>
+          <edgelabel>addressFirstPass</edgelabel>
+          <edgelabel>labelSet</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>std::vector&lt; pair&lt; string, int &gt; &gt;</label>
+      </node>
+      <node id="4">
+        <label>std::basic_string&lt; char &gt;</label>
+      </node>
+      <node id="5">
+        <label>std::set&lt; string &gt;</label>
+        <childnode refid="3" relation="usage">
+          <edgelabel>keys</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>std::string</label>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/Eng-Taha.jo/source/repos/Assembler/Assembler/Assembler.h" line="15" column="1" bodyfile="C:/Users/Eng-Taha.jo/source/repos/Assembler/Assembler/Assembler.h" bodystart="14" bodyend="37"/>
+    <listofallmembers>
+      <member refid="class_assembler_1ad6f71753891298701af25e7264cf8e4a" prot="private" virt="non-virtual"><scope>Assembler</scope><name>addressFirstPass</name></member>
+      <member refid="class_assembler_1ac726807690085ce890848eda522e0d01" prot="private" virt="non-virtual"><scope>Assembler</scope><name>addressSymbol</name></member>
+      <member refid="class_assembler_1aacc0a5f2bb3fff928b95934fa386b133" prot="public" virt="non-virtual"><scope>Assembler</scope><name>Assembler</name></member>
+      <member refid="class_assembler_1ad48362faa1b40ea033b264ea9dc0475b" prot="private" virt="non-virtual"><scope>Assembler</scope><name>begin</name></member>
+      <member refid="class_assembler_1ae6ca5344f27662196f46461dcba6bcb7" prot="private" virt="non-virtual"><scope>Assembler</scope><name>bitSTRING</name></member>
+      <member refid="class_assembler_1af87c5997ea0a7f01811af319f4d1c193" prot="private" virt="non-virtual"><scope>Assembler</scope><name>fileName</name></member>
+      <member refid="class_assembler_1a2896bf358b7ae6c53bcc887f48cf52f3" prot="public" virt="non-virtual"><scope>Assembler</scope><name>firstPass</name></member>
+      <member refid="class_assembler_1ab65594ef103917eafa7a3f22901ae7e7" prot="private" virt="non-virtual"><scope>Assembler</scope><name>flag</name></member>
+      <member refid="class_assembler_1aad37c76987fdaf9e4d49516412a24cd1" prot="private" virt="non-virtual"><scope>Assembler</scope><name>InOuput</name></member>
+      <member refid="class_assembler_1a079cb0f0c0abe7d36ded8c7924896c3f" prot="private" virt="non-virtual"><scope>Assembler</scope><name>labelSet</name></member>
+      <member refid="class_assembler_1a1493cea04817ad532a84fe871ae88e13" prot="private" virt="non-virtual"><scope>Assembler</scope><name>lookUp</name></member>
+      <member refid="class_assembler_1adaf13ee8d64fbad8be3589ed8ca50aa8" prot="private" virt="non-virtual"><scope>Assembler</scope><name>MRI</name></member>
+      <member refid="class_assembler_1a112f9f0224524a5dab5bd9781f71a48a" prot="private" virt="non-virtual"><scope>Assembler</scope><name>N</name></member>
+      <member refid="class_assembler_1aceb568c8a277f828d17f043052a98308" prot="private" virt="non-virtual"><scope>Assembler</scope><name>NonMRI</name></member>
+      <member refid="class_assembler_1ac47a6bdcaeb61f02a32b7e04e2babd0f" prot="private" virt="non-virtual"><scope>Assembler</scope><name>printAddressSymbolTABLE</name></member>
+      <member refid="class_assembler_1a53e160529c79d8ec2d0f8a54771e04d6" prot="public" virt="non-virtual"><scope>Assembler</scope><name>secondPass</name></member>
+      <member refid="class_assembler_1a09500d38e6c30f27976ff1b100bbd541" prot="public" virt="non-virtual"><scope>Assembler</scope><name>setFileName</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

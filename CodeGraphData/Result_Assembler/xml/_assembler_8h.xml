@@ -1,0 +1,138 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_assembler_8h" kind="file">
+    <compoundname>Assembler.h</compoundname>
+    <includes local="no">vector</includes>
+    <includes local="no">set</includes>
+    <includes local="no">map</includes>
+    <includes local="no">utility</includes>
+    <includes local="no">iostream</includes>
+    <includes local="no">fstream</includes>
+    <includes local="no">bitset</includes>
+    <includes local="no">string</includes>
+    <includes local="no">assert.h</includes>
+    <includes local="no">sstream</includes>
+    <includedby refid="_assembler_8cpp" local="yes">C:/Users/Eng-Taha.jo/source/repos/Assembler/Assembler/Assembler.cpp</includedby>
+    <includedby refid="_assemblermain_8cpp" local="yes">C:/Users/Eng-Taha.jo/source/repos/Assembler/Assembler/Assemblermain.cpp</includedby>
+    <incdepgraph>
+      <node id="88">
+        <label>assert.h</label>
+      </node>
+      <node id="87">
+        <label>string</label>
+      </node>
+      <node id="82">
+        <label>map</label>
+      </node>
+      <node id="85">
+        <label>fstream</label>
+      </node>
+      <node id="86">
+        <label>bitset</label>
+      </node>
+      <node id="80">
+        <label>vector</label>
+      </node>
+      <node id="83">
+        <label>utility</label>
+      </node>
+      <node id="89">
+        <label>sstream</label>
+      </node>
+      <node id="84">
+        <label>iostream</label>
+      </node>
+      <node id="81">
+        <label>set</label>
+      </node>
+      <node id="79">
+        <label>C:/Users/Eng-Taha.jo/source/repos/Assembler/Assembler/Assembler.h</label>
+        <link refid="Assembler.h"/>
+        <childnode refid="80" relation="include">
+        </childnode>
+        <childnode refid="81" relation="include">
+        </childnode>
+        <childnode refid="82" relation="include">
+        </childnode>
+        <childnode refid="83" relation="include">
+        </childnode>
+        <childnode refid="84" relation="include">
+        </childnode>
+        <childnode refid="85" relation="include">
+        </childnode>
+        <childnode refid="86" relation="include">
+        </childnode>
+        <childnode refid="87" relation="include">
+        </childnode>
+        <childnode refid="88" relation="include">
+        </childnode>
+        <childnode refid="89" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="92">
+        <label>C:/Users/Eng-Taha.jo/source/repos/Assembler/Assembler/Assemblermain.cpp</label>
+        <link refid="_assemblermain_8cpp"/>
+      </node>
+      <node id="91">
+        <label>C:/Users/Eng-Taha.jo/source/repos/Assembler/Assembler/Assembler.cpp</label>
+        <link refid="_assembler_8cpp"/>
+      </node>
+      <node id="90">
+        <label>C:/Users/Eng-Taha.jo/source/repos/Assembler/Assembler/Assembler.h</label>
+        <link refid="Assembler.h"/>
+        <childnode refid="91" relation="include">
+        </childnode>
+        <childnode refid="92" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_assembler" prot="public">Assembler</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>ASSEMBLER</highlight></codeline>
+<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ASSEMBLER</highlight></codeline>
+<codeline lineno="3"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#include&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include&lt;set&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include&lt;map&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;utility&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include&lt;fstream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include&lt;bitset&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include&lt;assert.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;sstream&gt;</highlight><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">std;</highlight></codeline>
+<codeline lineno="14" refid="class_assembler" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_assembler" kindref="compound">Assembler</ref></highlight></codeline>
+<codeline lineno="15"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_assembler" kindref="compound">Assembler</ref>();</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setFileName(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>fileName);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//TODO:<sp/>function<sp/>for<sp/>first<sp/>ass</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>firstPass();</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//TODO:<sp/>function<sp/>for<sp/>the<sp/>second<sp/>ass</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>secondPass();</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>lookUp(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>bitSTRING(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>printAddressSymbolTABLE();</highlight></codeline>
+<codeline lineno="27" refid="class_assembler_1af87c5997ea0a7f01811af319f4d1c193" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="class_assembler_1af87c5997ea0a7f01811af319f4d1c193" kindref="member">fileName</ref>;</highlight></codeline>
+<codeline lineno="28" refid="class_assembler_1a112f9f0224524a5dab5bd9781f71a48a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_assembler_1a112f9f0224524a5dab5bd9781f71a48a" kindref="member">N</ref>,<sp/>begin;</highlight></codeline>
+<codeline lineno="29" refid="class_assembler_1ab65594ef103917eafa7a3f22901ae7e7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_assembler_1ab65594ef103917eafa7a3f22901ae7e7" kindref="member">flag</ref>;</highlight></codeline>
+<codeline lineno="30" refid="class_assembler_1a079cb0f0c0abe7d36ded8c7924896c3f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>set&lt;string&gt;<sp/><ref refid="class_assembler_1a079cb0f0c0abe7d36ded8c7924896c3f" kindref="member">labelSet</ref>;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//map&lt;string,<sp/>string&gt;<sp/>pseudoInstruction;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32" refid="class_assembler_1adaf13ee8d64fbad8be3589ed8ca50aa8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>set&lt;<sp/>string&gt;<sp/><ref refid="class_assembler_1adaf13ee8d64fbad8be3589ed8ca50aa8" kindref="member">MRI</ref>;</highlight></codeline>
+<codeline lineno="33" refid="class_assembler_1aceb568c8a277f828d17f043052a98308" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>set&lt;<sp/>string&gt;<sp/><ref refid="class_assembler_1aceb568c8a277f828d17f043052a98308" kindref="member">NonMRI</ref>;</highlight></codeline>
+<codeline lineno="34" refid="class_assembler_1aad37c76987fdaf9e4d49516412a24cd1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>set&lt;string&gt;<sp/><ref refid="class_assembler_1aad37c76987fdaf9e4d49516412a24cd1" kindref="member">InOuput</ref>;</highlight></codeline>
+<codeline lineno="35" refid="class_assembler_1ad6f71753891298701af25e7264cf8e4a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>set&lt;string&gt;<sp/><ref refid="class_assembler_1ad6f71753891298701af25e7264cf8e4a" kindref="member">addressFirstPass</ref>;</highlight></codeline>
+<codeline lineno="36" refid="class_assembler_1ac726807690085ce890848eda522e0d01" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;pair&lt;string,<sp/>int&gt;&gt;<sp/><ref refid="class_assembler_1ac726807690085ce890848eda522e0d01" kindref="member">addressSymbol</ref>;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/Eng-Taha.jo/source/repos/Assembler/Assembler/Assembler.h"/>
+  </compounddef>
+</doxygen>

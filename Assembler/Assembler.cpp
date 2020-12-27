@@ -1,5 +1,31 @@
 #include "Assembler.h"
 std::string::size_type sz;
+string string_to_hex(const std::string& in) {
+	std::stringstream ss;
+
+	ss << std::hex << setfill('0');
+	for (size_t i = 0; in.length() > i; ++i) {
+		ss << setw(2) << static_cast<unsigned int>(static_cast<unsigned char>(in[i]));
+	}
+
+	return ss.str();
+}
+int convert(string num) {
+	int len = num.length();
+	int base = 1;
+	int temp = 0;
+	for (int i = len - 1; i >= 0; i--) {
+		if (num[i] >= '0' && num[i] <= '9') {
+			temp += (num[i] - 48) * base;
+			base = base * 16;
+		}
+		else if (num[i] >= 'A' && num[i] <= 'F') {
+			temp += (num[i] - 55) * base;
+			base = base * 16;
+		}
+	}
+	return temp;
+}
 Assembler::Assembler() {
 	//MRI TABLE
 	MRI.insert("AND");
@@ -228,8 +254,8 @@ void Assembler::firstPass() {
 			if (fir) {
 				if (line.find("ORG") == -1) {
 					stringstream s("0");
-					s >> hex >> N;
-					begin = 0;
+					s >> hex >> begin;
+					N = 0;
 				}
 				fir = false;
 			}
@@ -249,6 +275,11 @@ void Assembler::firstPass() {
 				break;
 			}
 			if (NonMRI.count(temp) > 0 or InOuput.count(temp) > 0) {
+				string shit;
+				ss >> shit;
+				if (shit!="") {
+					flag = 1; break;
+				}
 				++N;
 				continue;
 			}
@@ -259,15 +290,39 @@ void Assembler::firstPass() {
 				++N;
 				continue;
 			}
-			
 
+			if (addressFirstPass.count(to_string(N)) > 0) {
+				
+				int num;
+				if (temp == "HEX") {
+					
+					ss >> temp;
+					stringstream sx(temp);
+					sx >> hex >> num;
+					
+				}
+				if (temp == "DEC") {
+					
+
+					num = stoi(temp, &sz);
+					
+				}
+				addressSymbol.push_back(make_pair(to_string(N),num));
+			}
 			//IF ITS NOT INPUT OUTPUT OR NON-MRI
 			ss >> temp;
-			if (temp.length() > 3) {
+			
+			if (temp.length() > 3&&!isxdigit(temp[0])) {
 				cout << temp << endl;
 				flag = true;
 				break;
 			}
+			if (isxdigit(temp[0])) {
+				stringstream sd(temp);
+				int num;
+				sd >> hex >> num;
+				addressFirstPass.insert(to_string(num));
+			}else
 			addressFirstPass.insert(temp);
 			++N;
 		}
@@ -285,6 +340,7 @@ void Assembler::printAddressSymbolTABLE() {
 	//should not pass if the number of address syb not equal to the first
 	cout << "Symbolic Table:\n";
 	for (int i = 0; i < addressSymbol.size(); i++) {
+		if(!isdigit(addressSymbol[i].first[0]))
 		cout << addressSymbol[i].second << ' ' << addressSymbol[i].first << endl;
 	}cout << endl;
 }
@@ -311,6 +367,20 @@ void Assembler::secondPass() {
 			if (temp == "END") {
 				break;
 			}
+			if (temp == "HEX") {
+				cout << bitset<12>(convert(to_string(begin++))) << "   ";
+				string s;
+				ss >>s;
+				cout << bitset<16>(convert(s)) << endl;
+				continue;
+			}
+			else if (temp == "DEC") {
+				cout << bitset<12>(convert(to_string(begin++))) << "   ";
+				int num;
+				ss >> hex >> num;
+				cout << bitset<16>(num) << endl;
+				continue;
+			}
 			if (MRI.count(temp) > 0) {
 				bool indir = false;
 				int len = line.length();
@@ -319,7 +389,7 @@ void Assembler::secondPass() {
 						indir = true;
 					}
 				}
-				cout << bitset<12>(begin++) << "   " << lookUp(temp, indir);
+				cout << bitset<12>(convert(to_string(begin++))) << "   " << lookUp(temp, indir);
 				ss >> temp;
 				int num = -1;
 				for (int i = 0; i < addressSymbol.size(); i++) {
@@ -328,13 +398,16 @@ void Assembler::secondPass() {
 						break;
 					}
 				}
-				if (num == -1)
-					num = stoi(temp, &sz);
+				if (num == -1) {
+					num = convert(temp);
+					num = convert(to_string(num));
+				}
 				cout << bitset<12>(num) << endl;
 				continue;
 			}
 			
-			if (line.find(',')!=-1) {
+			//back
+			if (line.find(',')!=-1 or addressFirstPass.count(to_string(N)) > 0) {
 				
 				ss >> temp;
 				bool dec = false;
@@ -342,28 +415,27 @@ void Assembler::secondPass() {
 					dec = true;
 
 				
-				int num;
-				
-				if (temp=="HEX") {
-					cout << bitset<12>(begin++) << "   ";
-					ss >> temp;
-					stringstream sx(temp);
-					sx >> hex >> num;
-					cout << bitset<16>(num) << endl;
-					continue;
-				}
-				if (temp == "DEC") {
-					cout << bitset<12>(begin++) << "   ";
+					int num;
 					
+					if (temp == "HEX") {
+						cout << bitset<12>(convert(to_string(begin++))) << "   ";
+						ss >> hex >> num;
+						cout << bitset<16>(num) << endl;
+						continue;
+					}
+					if (temp == "DEC") {
+						cout << bitset<12>(convert(to_string(begin++))) << "   ";
+
 						num = stoi(temp, &sz);
 						cout << bitset<16>(num) << endl;
-					continue;
-				}
+						continue;
+					}
+				
 				
 			}
 			
 			if (NonMRI.count(temp) > 0) {
-				cout << bitset<12>(begin++) << "   ";
+				cout << bitset<12>(convert(to_string(begin++))) << "   ";
 				string hexFromLook = lookUp(temp, true);
 				for (int i = 0; i < hexFromLook.length(); i++) {
 					cout << bitSTRING(hexFromLook[i]);
@@ -371,7 +443,7 @@ void Assembler::secondPass() {
 				continue;
 			}
 			if (InOuput.count(temp) > 0) {
-				cout << bitset<12>(begin++) << "   ";
+				cout << bitset<12>(convert(to_string(begin++))) << "   ";
 				string hexFromLook = lookUp(temp, true);
 				for (int i = 0; i < hexFromLook.length(); i++) {
 					cout << bitSTRING(hexFromLook[i]);

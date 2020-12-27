@@ -1,0 +1,121 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_assemblermain_8cpp" kind="file">
+    <compoundname>Assemblermain.cpp</compoundname>
+    <includes local="no">iostream</includes>
+    <includes local="no">string</includes>
+    <includes local="no">fstream</includes>
+    <includes refid="_assembler_8h" local="yes">Assembler.h</includes>
+    <incdepgraph>
+      <node id="103">
+        <label>assert.h</label>
+      </node>
+      <node id="93">
+        <label>C:/Users/Eng-Taha.jo/source/repos/Assembler/Assembler/Assemblermain.cpp</label>
+        <link refid="Assemblermain.cpp"/>
+        <childnode refid="94" relation="include">
+        </childnode>
+        <childnode refid="95" relation="include">
+        </childnode>
+        <childnode refid="96" relation="include">
+        </childnode>
+        <childnode refid="97" relation="include">
+        </childnode>
+      </node>
+      <node id="95">
+        <label>string</label>
+      </node>
+      <node id="100">
+        <label>map</label>
+      </node>
+      <node id="96">
+        <label>fstream</label>
+      </node>
+      <node id="102">
+        <label>bitset</label>
+      </node>
+      <node id="98">
+        <label>vector</label>
+      </node>
+      <node id="101">
+        <label>utility</label>
+      </node>
+      <node id="104">
+        <label>sstream</label>
+      </node>
+      <node id="94">
+        <label>iostream</label>
+      </node>
+      <node id="99">
+        <label>set</label>
+      </node>
+      <node id="97">
+        <label>Assembler.h</label>
+        <link refid="_assembler_8h"/>
+        <childnode refid="98" relation="include">
+        </childnode>
+        <childnode refid="99" relation="include">
+        </childnode>
+        <childnode refid="100" relation="include">
+        </childnode>
+        <childnode refid="101" relation="include">
+        </childnode>
+        <childnode refid="94" relation="include">
+        </childnode>
+        <childnode refid="96" relation="include">
+        </childnode>
+        <childnode refid="102" relation="include">
+        </childnode>
+        <childnode refid="95" relation="include">
+        </childnode>
+        <childnode refid="103" relation="include">
+        </childnode>
+        <childnode refid="104" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_assemblermain_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int main</definition>
+        <argsstring>()</argsstring>
+        <name>main</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Eng-Taha.jo/source/repos/Assembler/Assembler/Assemblermain.cpp" line="6" column="1" bodyfile="C:/Users/Eng-Taha.jo/source/repos/Assembler/Assembler/Assemblermain.cpp" bodystart="6" bodyend="18"/>
+        <references refid="class_assembler_1a2896bf358b7ae6c53bcc887f48cf52f3" compoundref="_assembler_8cpp" startline="219" endline="279">Assembler::firstPass</references>
+        <references refid="class_assembler_1a53e160529c79d8ec2d0f8a54771e04d6" compoundref="_assembler_8cpp" startline="291" endline="387">Assembler::secondPass</references>
+        <references refid="class_assembler_1a09500d38e6c30f27976ff1b100bbd541" compoundref="_assembler_8cpp" startline="216" endline="218">Assembler::setFileName</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include&lt;fstream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_assembler_8h" kindref="compound">Assembler.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">std;</highlight></codeline>
+<codeline lineno="6" refid="_assemblermain_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="_assemblermain_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" kindref="member">main</ref>()</highlight></codeline>
+<codeline lineno="7"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Please,<sp/>provide<sp/>the<sp/>name<sp/>of<sp/>the<sp/>\&quot;File<sp/>Name\&quot;,<sp/>make<sp/>sure<sp/>to<sp/>be<sp/>{fileName}.txt<sp/>the<sp/>same<sp/>dirctory\n:&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>name;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>cin<sp/>&gt;&gt;<sp/>name;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_assembler" kindref="compound">Assembler</ref><sp/>ass;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//ass.setFileName(&quot;assembleyLangFile&quot;);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>ass.<ref refid="class_assembler_1a09500d38e6c30f27976ff1b100bbd541" kindref="member">setFileName</ref>(name);</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>ass.<ref refid="class_assembler_1a2896bf358b7ae6c53bcc887f48cf52f3" kindref="member">firstPass</ref>();</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>ass.<ref refid="class_assembler_1a53e160529c79d8ec2d0f8a54771e04d6" kindref="member">secondPass</ref>();</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\nWritten<sp/>By<sp/>Taha.jo\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/Eng-Taha.jo/source/repos/Assembler/Assembler/Assemblermain.cpp"/>
+  </compounddef>
+</doxygen>
