@@ -13,6 +13,9 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Resource Files\digrams">
+      <UniqueIdentifier>{e6952430-b83d-40df-b46f-2058f9bb6ee7}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Assembler.h">
@@ -42,5 +45,16 @@
     <Text Include="OutPut.txt">
       <Filter>Resource Files</Filter>
     </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\..\..\..\Desktop\outter view.png">
+      <Filter>Resource Files\digrams</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Desktop\first Pass.png">
+      <Filter>Resource Files\digrams</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Desktop\second pass1.png">
+      <Filter>Resource Files\digrams</Filter>
+    </Image>
   </ItemGroup>
 </Project>

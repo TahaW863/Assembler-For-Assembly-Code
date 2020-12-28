@@ -153,6 +153,11 @@
     <Text Include="assembleyLangFile.txt" />
     <Text Include="OutPut.txt" />
   </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\..\..\..\Desktop\first Pass.png" />
+    <Image Include="..\..\..\..\Desktop\outter view.png" />
+    <Image Include="..\..\..\..\Desktop\second pass1.png" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
